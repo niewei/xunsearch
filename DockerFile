@@ -1,0 +1,5 @@
+FROM centos
+MAINTAINER niewei qf_niewei@163.com
+RUN yum -y install httpd php
+EXPOSE 80
+CMD ["httpd","-k","start"]
